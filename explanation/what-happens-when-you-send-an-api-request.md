@@ -16,7 +16,7 @@ You trigger APIs throughout your day without realizing it:
 ## The Anatomy of an API Request
 Every API transaction has two main halves: the Request (what you send) and the Response (what comes back).
 
-To build a request, the client needs two critical pieces of information: an endpoint and an HTTP **(Hypertext Transfer Protocol)** method.
+A client is the software that sends a request to an API, such as web browser, mobile app, or API tool like Postman. To build a request, the client needs two critical pieces of information: an endpoint and an **Hypertext Transfer Protocol** (HTTP) method.
 ### The Endpoint
 An endpoint is the specific web address (URL) on a server where a client goes to access a resource.
 Imagine a restaurant app hosted at `https://api.restaurant.com`. If you want to view their menu, the endpoint might look like this:
@@ -40,9 +40,9 @@ While `GET` and `DELETE` requests usually don't need data attached, `POST`�
 When you click a button or send a command via [cURL](https://curl.se/) or [Postman](https://www.postman.com/), the request follows a predictable path:
 - **DNS Lookup:** Before sending anything, your device asks a Domain Name System (DNS) server to translate the human-friendly URL (`api.restaurant.com`) into a machine-readable Internet Protocol address (IP address).
 - **Sending the Request:** The client connects to that IP address over HTTP/HTTPS, sending along the method, endpoint, headers, and any body payload.
-- **Server Authentication & Validation:** The server inspects the request headers to verify your identity and checks whether you have permission to access the resource.
+- **Server Authentication and Validation:** The server inspects the request headers to verify your identity and checks whether you have permission to access the resource.
 - **Fulfilling the Action:** The server processes your request and interacts with its database to fetch, create, or update the required records.
-- **Returning the Response:** The server sends a response containing an HTTP status code (like `200 OK`) and, when applicable, a response body. Many modern APIs use JSON (JavaScript Object Notation) format to structure data.
+- **Returning the Response:** The server sends a response containing an HTTP status code (like `200 OK`) and, when applicable, a response body. Many modern APIs use JavaScript Object Notation (JSON) format to structure data.
 ## Understanding API response
 When the server responds, it typically sends back two things: an HTTP Status Code and a JSON payload.
 ### HTTP Status Codes
