@@ -16,7 +16,7 @@ You trigger APIs throughout your day without realizing it:
 ## The Anatomy of an API Request
 Every API transaction has two main halves: the Request (what you send) and the Response (what comes back).
 
-A client is the software that sends a request to an API, such as web browser, mobile app, or API tool like Postman. To build a request, the client needs two critical pieces of information: an endpoint and an **Hypertext Transfer Protocol** (HTTP) method.
+To build a request, the client (such a web browser, mobile app, or an API tools like Postman) needs two critical pieces of information: an endpoint and an **Hypertext Transfer Protocol** (HTTP) method.
 ### The Endpoint
 An endpoint is the specific web address (URL) on a server where a client goes to access a resource.
 Imagine a restaurant app hosted at `https://api.restaurant.com`. If you want to view their menu, the endpoint might look like this:
